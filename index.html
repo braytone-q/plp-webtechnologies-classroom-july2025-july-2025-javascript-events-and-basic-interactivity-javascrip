@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Interactivity</h1>
+    <button id="modeToggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section>
+      <h2>Counter Game</h2>
+      <button id="increment">+</button>
+      <span id="count">0</span>
+      <button id="decrement">-</button>
+      <p>Tip: Use Arrow Up/Down keys to control the counter.</p>
+    </section>
+
+    <!-- Collapsible FAQ Section -->
+    <section>
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this page about?</button>
+        <p class="faq-answer hidden">It’s a playground for JavaScript interactivity.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I use this code?</button>
+        <p class="faq-answer hidden">Yes—learn from it, remix it, have fun.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Submit</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
